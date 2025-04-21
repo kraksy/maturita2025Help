@@ -1,0 +1,44 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+23
+-sourcepath
+'C:/Users/kraks/Desktop/MATURITA/JAVA_REFERENCE/src/main/java;C:/Users/kraks/Desktop/MATURITA/JAVA_REFERENCE/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/kraks/Desktop/MATURITA/JAVA_REFERENCE/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'JAVA_REFERENCE 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'JAVA_REFERENCE 1.0-SNAPSHOT API'
+com.mycompany.java_reference.core
+com.mycompany.java_reference
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\src\main\java = 1745229282689
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\generated-sources\annotations = 1745235452009
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\allclasses-index.html = 1745235455552
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\allpackages-index.html = 1745235455556
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\element-list = 1745235455439
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\help-doc.html = 1745235455602
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\index-all.html = 1745235455592
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\index.html = 1745235455533
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\member-search-index.js = 1745235455564
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\module-search-index.js = 1745235455558
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\overview-summary.html = 1745235455597
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\overview-tree.html = 1745235455527
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\package-search-index.js = 1745235455560
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\search.html = 1745235455594
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\tag-search-index.js = 1745235455565
+C:\Users\kraks\Desktop\MATURITA\JAVA_REFERENCE\target\reports\apidocs\type-search-index.js = 1745235455562

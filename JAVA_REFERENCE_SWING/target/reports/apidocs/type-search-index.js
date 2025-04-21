@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.mycompany.java_reference.core","l":"employee"},{"p":"com.mycompany.java_reference","l":"employeeManager"},{"p":"com.mycompany.java_reference","l":"JAVA_REFERENCE"},{"p":"com.mycompany.java_reference.core","l":"Position"}];updateSearchResults();

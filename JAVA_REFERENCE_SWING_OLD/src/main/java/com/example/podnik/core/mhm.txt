@@ -1,0 +1,2 @@
+" kontrolu expirace " je napsana v B u functions , ale neni to napsany u ukladani informaci.
+jsem si napsal classku a kdyz jsem se podival na dalsi tak tam je dalsi vec na napsani.

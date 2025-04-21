@@ -1,0 +1,40 @@
+
+NOTEPAD PROJECT
+
+popis : 
+
+	jednoduchá aplikace udělaná v vanilla JS která využívá localStorage na uložení dat
+	
+architektura : 
+	
+	[ local storage ] [ buttons ] [ textArea : name ] [ textArea : text ] 
+	
+přehlked :
+
+function getText()
+	dostává text z textArea pro text notu
+
+function getName()
+	dostává text z textArea pro jméno souboru
+	
+function newNote()
+	vytvoří nový note a přídá ho do local storage
+
+function deleteNote()
+	vymaže podle jména v localStorage note
+	
+function openNote() 
+	otevře z localStorage podle jména note
+	
+function save() 
+	uložý data do localStorage, jméno i text
+	
+knihovny a nástroje : 
+
+vanilla JS - jazyk
+VScode - editor
+LocalStorage - práce s daty
+
+instrukce : 
+	spuštění : 
+		clickneme na note.html soubour , a tím otevřeme stránku

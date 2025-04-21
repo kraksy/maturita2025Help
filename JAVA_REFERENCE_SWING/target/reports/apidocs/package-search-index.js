@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.mycompany.java_reference"},{"l":"com.mycompany.java_reference.core"}];updateSearchResults();
