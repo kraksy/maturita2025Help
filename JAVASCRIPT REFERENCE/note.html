@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>textblock</title>
+         <style>
+                  body{
+                           padding: 20px;
+                           margin: 0;
+                           background-color: rgb(56, 50, 66);
+                  }
+
+                  #file
+                  {
+                           background-color: gray;
+                           color: black;
+                           margin-top: 20px;
+                           width: 500px;
+                  }
+
+                  #title{
+                           color: white;
+                           padding: 20px;
+                  }
+
+                  #note{
+                           width: 500px;
+                           height: 500px;
+                           margin-top: 20px;
+                  }
+
+                  #btn1{
+                           margin-right: 20px;
+                           padding: 20px;
+                           color: black;
+                           background-color: gray;
+                  }
+
+                  #btn2{
+                           margin-right: 20px;
+                           padding: 20px;
+                           color: black;
+                           background-color: gray;
+                  }
+
+                  #btn3{
+                           margin-right: 20px;
+                           padding: 20px;
+                           color: black;
+                           background-color: gray;
+                  }
+
+                  #btn4{
+                           margin-right: 20px;
+                           padding: 20px;
+                           color: black;
+                           background-color: gray;
+                  }
+         </style>
+</head>
+<body>
+         <script>
+                  
+                  const notes = [];
+
+                  function save()
+                  {
+                           
+                  }
+
+                  function getText()
+                  {        
+                           const text = document.getElementById("note").value;
+                           return text;
+                  }
+                  
+                  function getName()
+                  {
+                           const name = document.getElementById("file").value;
+                           return name;
+                  }
+
+                  function newNote()
+                  {
+                           document.getElementById("note").value = "";
+                           console.log("delete old Content");
+                           localStorage.setItem(getName(), getText());
+                           notes.push(getName());
+                  }
+
+                  function deleteNote()
+                  {
+                           document.getElementById("note").value = "";
+                           localStorage.removeItem(getName());
+                  }
+
+                  function openNote()
+                  {
+                           const openNote = document.getElementById("file").value;
+                           document.getElementById("note").value = localStorage.getItem(openNote);
+                  }
+
+                  function save()
+                  {
+                           const element1 = getText();
+                           const element2 = getName();
+                           localStorage.setItem(element2, element1);
+                           document.getElementById("file").value = ""
+                           document.getElementById("file").placeholder = "saved"
+                  }
+         </script>
+         <header>
+                  <a id="title"> NOTE APP </a>
+                  <button onclick="newNote()" id="btn1">new</button>
+                  <button onclick="openNote()" id="btn2">open</button>
+                  <button onclick="deleteNote()" id="btn3">delete</button>
+                  <button onclick="save()" id="btn4">save</button>
+         </header>
+
+         <div id="space">
+                  <textarea id="file" placeholder="name of the file"></textarea>
+         </div>
+         
+         <textarea id="note" placeholder="write here"></textarea>
+
+         <div id="files">
+                  
+         </div>
+</body>
+</html>
