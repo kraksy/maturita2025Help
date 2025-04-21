@@ -8,12 +8,12 @@ public class employee {
     private int id; 
     private String name;
     private String surname;
-    private Position pos;
+    private String pos;
     private String email; 
     
     public boolean absence = false;
     
-    public employee(int id, String name, String surname, Position pos, String email)
+    public employee(int id, String name, String surname, String pos, String email)
     {
         this.id = id;
         this.name = name;
@@ -32,12 +32,12 @@ public class employee {
         this.email = email;
     }
     
-    public Position getPos()
+    public String getPos()
     {
         return this.pos;
     }
     
-    public void setPos(Position pos)
+    public void setPos(String pos)
     {
         this.pos = pos;
     }

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pexeso"
+    namespace = "com.example.pexs"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.pexeso"
+        applicationId = "com.example.pexs"
         minSdk = 33
         targetSdk = 35
         versionCode = 1

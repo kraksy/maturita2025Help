@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "pexeso"
+rootProject.name = "pexs"
 include(":app")
- 

@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class employeeManager {
     public List<employee> employeeList = new ArrayList<>();
+    public int id = 0;
     
     public employeeManager() {}
     

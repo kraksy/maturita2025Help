@@ -3,7 +3,6 @@
  */
 package com.mycompany.java_reference;
 
-import com.mycompany.java_reference.core.Position;
 import com.mycompany.java_reference.core.employee;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -14,43 +13,55 @@ import javax.swing.JLabel;
 import javax.swing.*;
 
 public class JAVA_REFERENCE {
-
+    
+    static employeeManager manager = new employeeManager();
+    static JFrame frame = new JFrame("Employee List");
+    static JPanel panel = new JPanel();
+    
     public static void main(String[] args) {
-        employeeManager manager = new employeeManager();
-        JFrame frame = new JFrame("Employee List");
+        JFrame frame = new JFrame("Employee ");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300 , 300);
-
-        JPanel panel = new JPanel();
         
+        
+        JTextField name = new JTextField();
+        JTextField surname = new JTextField();
+        JTextField position = new JTextField();
+        JTextField email = new JTextField();
+                
         JButton button = new JButton(" create employee ");
+        
+        panel.add(name);
+        panel.add(surname);
+        panel.add(position);
+        panel.add(email);
         panel.add(button);
         
         button.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e) {
-                
+                employee mf = new employee(manager.id, 
+                        name.getText(), 
+                        surname.getText(), 
+                        position.getText(),
+                        email.getText());
+                manager.addEmployee(mf);
+                manager.id++;
+                add();
+                panel.updateUI();
             }
         });
 
-        Position admin = new Position(1, "admin");
-        Position assistent = new Position (2, "assistent");
-
-        employee emil = new employee(1 , "emil", "debil", admin, "mail.kokot");
-        employee david = new employee(2 , "david", "pavel", assistent, "mail.kokot");
-        employee martin = new employee(3 , "martin", "frame", assistent, "mail.kokot");
-        
-        manager.addEmployee(emil);
-        manager.addEmployee(david);
-        manager.addEmployee(martin);
-      
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+    
+    public static void add()
+    {
         for(employee emp : manager.employeeList) {
             JLabel empLabel = new JLabel(emp.getName());
             panel.add(empLabel);
         }
-
-        frame.add(panel);
-        frame.setVisible(true);
     }
 }
